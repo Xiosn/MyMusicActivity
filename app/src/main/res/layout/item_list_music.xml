@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/albumMarginSize"
+    android:paddingBottom="@dimen/albumMarginSize"
+    android:background="@drawable/item_commit_select">
+
+    <com.myapplication.views.WEqualsHimageView
+        android:id="@+id/iv_List_Icon"
+        android:layout_width="@dimen/itemHeight"
+        android:layout_height="@dimen/itemHeight"
+        android:src="@mipmap/one"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/albumMarginSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="音乐名称"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="作者"
+            android:textColor="@color/infoColor"
+            android:textSize="@dimen/infoSize" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/titleListSize"
+        android:layout_height="@dimen/titleListSize"
+        android:src="@mipmap/play"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/marginSize"/>
+</LinearLayout>
